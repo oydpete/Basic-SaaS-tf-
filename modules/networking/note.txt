@@ -1,0 +1,5 @@
+The vpc module contains, 
+
+subnets
+nat gateway
+route tables(s)
