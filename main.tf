@@ -7,7 +7,7 @@ module "ec2" {
   keyname             = module.keypair.keypair
   environment         = var.environment
   subnet_id           = module.networking.public_subnet_ids[0]
-  security_group_ids  = [module.security_group.docker_compose_sg]
+  security_group_ids  = [module.security_group.basic_sg]
   ec2_instance_type   = var.ec2_instance_type
 }
 
